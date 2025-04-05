@@ -8,13 +8,9 @@ public class Main {
 
         int a = calc.plus.apply(1, 2);
         int b = calc.minus.apply(1, 1);
-        // b не должен быть равен 0, делить на ноль нельзя
-        if (b != 0) {
-            int c = calc.devide.apply(a, b);
-            calc.println.accept(c);
-        } else {
-            System.out.println("На ноль делить нельзя.");
-        }
+        int c = calc.devide.apply(a, b);
+
+        calc.println.accept(c);
     }
 }
 
